@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "League Spartan", sans-serif;
+    background-image: url(images/bg-pattern-bottom-desktop.svg);
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 3vh 1vw;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.left h2 {
+    font-size: 9.2vh;
+    color: #511f50;
+    margin-top: 18vh;
+    margin-left: 26vh;
+}
+
+.left p {
+    margin-top: 5vh;
+    margin-left: 26vh;
+    color: #666067;
+    line-height: 4vh;
+    font-size: 3vh;
+}
+
+.rating-card {
+    height: 8vh;
+    width: 27vw;
+    background-color: #f7f2f8;
+    border-radius: 5px;
+    margin-top: 21vh;
+    margin-left: 22vh;
+    margin-right: 7vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-card1 {
+    height: 8vh;
+    width: 27vw;
+    background-color: #f7f2f8;
+    border-radius: 5px;
+    margin-top: 4vh;
+    margin-left: 22vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-card2 {
+    height: 8vh;
+    width: 27vw;
+    background-color: #f7f2f8;
+    border-radius: 5px;
+    margin-top: 4vh;
+    margin-left: 22vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-card3 {
+    height: 8vh;
+    width: 27vw;
+    background-color: #f7f2f8;
+    border-radius: 5px;
+    margin-top: 4vh;
+    margin-left: 22vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+    margin-top: 1vh;
+}
+
+.stars img {
+    height: 1.6vh;
+}
+
+.stars p {
+    font-weight: 800;
+    color: #511f50;
+    font-size: 2vh;
+    margin-top: 1vh;
+}
+/* Reviews Container */
+.reviews {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin-top: 2vh;
+}
+
+
+/* Card1 Styles */
+.card1 {
+    height: 23vh;
+    width: 23vw;
+    background-color: #511f50;
+    border-radius: 8px;
+    margin-bottom: 2vh;
+    flex: 0 0 calc(23vw - 4vh);
+}
+/* Card2 Styles */
+.card2 {
+    height: 23vh;
+    width: 23vw;
+    background-color: #511f50;
+    border-radius: 8px;
+    margin-bottom: 2vh;
+    flex: 0 0 calc(23vw - 4vh);
+}
+/* Card3 Styles */
+.card3 {
+    height: 23vh;
+    width: 23vw;
+    background-color: #511f50;
+    border-radius: 8px;
+    margin-bottom: 2vh;
+    flex: 0 0 calc(23vw - 4vh);
+}
+/* Image Styles for Card1 */
+.card1 img {
+    height: 3.5vh;
+    width: 3.5vh;
+    border-radius: 50%;
+    margin-top: 4vh;
+    margin-left: 3vh;
+}
+/* Image Styles for Card2 */
+.card2 img {
+    height: 3.5vh;
+    width: 3.5vh;
+    border-radius: 50%;
+    margin-top: 4vh;
+    margin-left: 3vh;
+}
+/* Image Styles for Card3 */
+.card3 img {
+    height: 3.5vh;
+    width: 3.5vh;
+    border-radius: 50%;
+    margin-top: 4vh;
+    margin-left: 3vh;
+}
+/* Name Styles */
+.name {
+    color: white;
+    margin-top: -4vh;
+    margin-left: 5vw;
+    font-size: 2vh;
+}
+/* ID Styles */
+.id {
+    color: rgb(244, 216, 216);
+    font-size: 1.5vh;
+    margin-left: 5vw;
+    font-weight: lighter;
+}
+/* Paragraph Styles */
+.card1 p,
+.card2 p,
+.card3 p {
+    color: white;
+    font-weight: 200;
+    padding: 2vh 2vh;
+    line-height: 2.5vh;
+    
+}
+
+@media screen and (max-width: 650px) {
+    /* Container Styles */
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align content */
+        margin-left: 2vw;
+    }
+
+    /* Left Column Styles */
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align content */
+        margin-top: 10vh; /* Adjusted margin-top */
+    }
+
+    /* Heading Styles */
+    .left h2 {
+        font-size: 7vh; /* Adjusted font size */
+        text-align: center; /* Center-align text */
+        margin: 0; /* Remove default margin */
+        padding: 0 2vw; /* Add horizontal padding */
+    }
+
+    /* Paragraph Styles */
+    .left p {
+        text-align: center;
+        margin-top: 2vh;
+        width: 100%;
+        padding: 0 2vw;
+        margin-left: 1vw;
+    }
+
+    /* Right Column Styles */
+    .right {
+                display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -2vh;
+        padding: 0 28vw;
+        margin-left: -60vw;
+        width: 100%;
+        height: 102%;
+    }
+
+    /* Rating Card Styles */
+    .rating-card,
+    .rating-card1,
+    .rating-card2 {
+        width: 90%; /* Adjusted width */
+        margin-top: 5vh; /* Adjusted margin-top */
+    }
+
+    /* Stars Styles */
+    .stars {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1vw;
+    }
+
+    /* Star Image Styles */
+    .stars img {
+        height: 1.6vh;
+    }
+
+    /* Rating Text Styles */
+    .stars p {
+        font-weight: 800;
+        color: #511f50;
+        font-size: 2vh;
+        margin-top: 1vh;
+    }
+
+    /* Review Section Styles */
+    .reviews {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center-align content */
+        margin-top: 5vh; /* Adjusted margin-top */
+    }
+
+    /* Card Styles */
+    .card1,
+    .card2,
+    .card3 {
+        width: 90%; /* Adjusted width */
+        margin-top: 5vh; /* Adjusted margin-top */
+    }
+
+    /* Image Styles */
+    .card1 img,
+    .card2 img,
+    .card3 img {
+        width: 9vw;
+        height: 4vh;
+        border-radius: 50%
+    }
+
+    /* Name Styles */
+    .name {
+        color: white;
+        font-size: 3vh; /* Adjusted font size */
+        margin-top: 2vh; /* Adjusted margin-top */
+    }
+
+    /* ID Styles */
+    .id {
+        color: rgb(244, 216, 216);
+        font-size: 2vh; /* Adjusted font size */
+        font-weight: lighter;
+    }
+
+    /* Paragraph Styles */
+    .card1 p,
+    .card2 p,
+    .card3 p {
+        color: white;
+        font-weight: 200;
+        padding: 2vh 2vw; /* Adjusted padding */
+        line-height: 2.5vh;
+        width: 100%;
+        text-align: center; /* Center-align text */
+    }
+}
+
